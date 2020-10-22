@@ -1,0 +1,125 @@
+/* Navigation bar */
+#nav {
+  background-color: #282828;
+  text-align: center;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  cursor: default;
+  height: 3.5em;
+  line-height: 3.5em;
+  font-size: 0.8rem;
+  font-family: 'Quicksand', sans-serif;
+
+  ul {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	margin-left: 0px;
+	justify-content: center;
+    margin-bottom: 0;
+    list-style: none;
+    padding-left: 0;
+  }
+
+  li {
+	display: inline-block;
+    padding-left: 0;
+  }
+  a {
+	margin-top: 5px;
+    position: relative;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    outline: 0;
+    font-weight: 600;
+    border-radius: 8px;
+    height: 2.5em;
+    line-height: 2.5em;
+    padding: 0 1.25em;
+
+    &:hover {
+		@media #{$mq-medium} {
+			color: #fff;
+			background: #383838;
+		  }
+    }
+
+    &.active {
+		@media #{$mq-medium} {
+			background: #484848;
+		  }
+
+      &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: -0.6em;
+        left: 50%;
+        margin-left: -0.75em;
+        border-left: solid 0.75em transparent;
+        border-right: solid 0.75em transparent;
+        border-top: solid 0.6em #282828;
+      }
+    }
+  }
+}
+/* Sections */
+
+body > section {
+  margin-bottom: 0;
+}
+
+#top {
+  padding: 5em 0 5em 0;
+  text-align: center;
+
+  .container {
+	width: 100%;
+	margin-left: 0;
+	
+    &__image {
+      border-radius: 100%;
+      width: 20em;
+      height: 10em;
+	  margin: 0 auto;
+	  
+      img {
+		border-radius: 100%;
+		width: 70%;
+	  }
+    }
+    &__info {
+		font-family: 'Quicksand', sans-serif;
+      h1 {
+		  margin: 0 auto;
+		  width: 80%;
+		font-size: 2em;
+        margin-top: 3em;
+      }
+
+      p {
+		margin: 30px 0 30px 0;
+        font-size: 1em;
+        line-height: 1.75em;
+	  }
+	  a {
+		margin: 0 auto;
+		position: relative;
+		display: block;
+		width: 80%;
+		color: #fff;
+		text-decoration: none;
+		outline: 0px;
+		font-weight: 600;
+		border-radius: 8px;
+		height: 2.5em;
+		line-height: 2.5em;
+		padding: 0 1.25em;
+		background-color: rgb(42, 119, 207);
+	}
+    }
+  }
+}
