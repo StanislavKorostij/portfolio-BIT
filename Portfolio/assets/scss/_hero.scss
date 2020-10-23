@@ -10,25 +10,26 @@
   height: 3.5em;
   line-height: 3.5em;
   font-size: 0.8rem;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
+  z-index: 9999;
 
   ul {
-	display: flex;
-	flex-wrap: wrap;
-	width: 100%;
-	margin-left: 0px;
-	justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-left: 0px;
+    justify-content: center;
     margin-bottom: 0;
     list-style: none;
     padding-left: 0;
   }
 
   li {
-	display: inline-block;
+    display: inline-block;
     padding-left: 0;
   }
   a {
-	margin-top: 5px;
+    margin-top: 5px;
     position: relative;
     display: block;
     color: #fff;
@@ -41,16 +42,16 @@
     padding: 0 1.25em;
 
     &:hover {
-		@media #{$mq-medium} {
-			color: #fff;
-			background: #383838;
-		  }
+      @media #{$mq-medium} {
+        color: #fff;
+        background: #383838;
+      }
     }
 
     &.active {
-		@media #{$mq-medium} {
-			background: #484848;
-		  }
+      @media #{$mq-medium} {
+        background: #484848;
+      }
 
       &:before {
         content: "";
@@ -67,59 +68,136 @@
   }
 }
 /* Sections */
+// wrapper style1
 
 body > section {
   margin-bottom: 0;
 }
 
 #top {
-  padding: 5em 0 5em 0;
+  padding: 4em 0 3em 0;
   text-align: center;
 
   .container {
-	width: 100%;
-	margin-left: 0;
-	
+    width: 100%;
+    margin-left: 0;
+
     &__image {
       border-radius: 100%;
       width: 20em;
-      height: 10em;
-	  margin: 0 auto;
-	  
+      height: 12em;
+      margin: 0 auto;
+
       img {
-		border-radius: 100%;
-		width: 70%;
-	  }
+        border-radius: 100%;
+        width: 60%;
+      }
     }
     &__info {
-		font-family: 'Quicksand', sans-serif;
+      font-family: "Quicksand", sans-serif;
       h1 {
-		  margin: 0 auto;
-		  width: 80%;
-		font-size: 2em;
-        margin-top: 3em;
+        margin: 0 auto;
+        width: 80%;
+        font-size: 2em;
+        margin-top: 1em;
+        strong {
+          font-weight: 600;
+        }
       }
 
       p {
-		margin: 30px 0 30px 0;
+        margin: 30px 0 30px 0;
         font-size: 1em;
         line-height: 1.75em;
-	  }
-	  a {
-		margin: 0 auto;
-		position: relative;
-		display: block;
-		width: 80%;
-		color: #fff;
-		text-decoration: none;
-		outline: 0px;
-		font-weight: 600;
-		border-radius: 8px;
-		height: 2.5em;
-		line-height: 2.5em;
-		padding: 0 1.25em;
-		background-color: rgb(42, 119, 207);
-	}
+      }
+      a {
+        margin: 0 auto;
+        position: relative;
+        display: block;
+        width: 80%;
+        color: #fff;
+        text-decoration: none;
+        outline: 0px;
+        font-weight: 600;
+        border-radius: 8px;
+        height: 2.5em;
+        line-height: 2.5em;
+        padding: 0 1.25em;
+        background-color: rgb(42, 119, 207);
+      }
     }
   }
+}
+
+/* Sections */
+// wrapper style2
+
+#work {
+  padding: 4em 0 3em 0;
+  text-align: center;
+  background-image: url(images/bg.png);
+  box-shadow: inset 0px 1px 0px 0px rgba(0, 0, 0, 0.05), inset 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
+
+    .wrapper.style2 {
+      background-color: #fafafa;
+	  text-shadow: 1px 1px 0px #fff;
+    }
+      .container {
+        width: 90%;
+		margin-left: 0;
+		margin: 0 auto;
+		
+		&__header {
+			margin-bottom: 60px;
+
+			h2 {
+				font-size: 1.5em;
+				font-weight: 600;
+			}
+		}
+
+        &__cardbox {
+		  font-family: "Quicksand", sans-serif;
+		  background: #fff;
+		  box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15), 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
+		  text-align: center;
+		  padding: 30px 20px 30px 20px;
+		  margin: 0 auto;
+		  margin-bottom: 20px;
+
+          h3 {
+            margin: 0 auto;
+            width: 80%;
+            font-size: 2em;
+            margin-top: 1em;
+            strong {
+              font-weight: 600;
+            }
+          }
+
+          p {
+            margin: 30px 0 30px 0;
+            font-size: 1em;
+            line-height: 1.75em;
+          }
+        }
+        &__footer {
+          a {
+            margin: 0 auto;
+            position: relative;
+            display: block;
+            width: 80%;
+            color: #fff;
+            text-decoration: none;
+            outline: 0px;
+            font-weight: 600;
+            border-radius: 8px;
+            height: 2.5em;
+            line-height: 2.5em;
+            padding: 0 1.25em;
+            background-color: rgb(42, 119, 207);
+          }
+        }
+      }
+
 }
