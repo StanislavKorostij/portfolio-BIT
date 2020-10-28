@@ -1,15 +1,18 @@
 html {
-	box-sizing: border-box;
-	scroll-behavior: smooth;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
-*, *:before, *:after {
-	box-sizing: inherit;
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
 body {
-padding-top: 3.5em;
+  text-shadow: 1px 1px 0px #fff;
+  padding-top: 3.5em;
 }
 
-@import '_breakpoints.scss';
-@import '_hero.scss';
+@import "_breakpoints.scss";
+@import "_hero.scss";
